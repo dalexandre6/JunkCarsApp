@@ -4,14 +4,24 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<img src="~/Images/JunkCars2.png" />
+<h1>LIST OF CARS:</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-light" style="color:blue">Create New</a>
+    <a asp-action="Higherthan150" asp-controller="Cars" class="btn-light" style="color:black">150 Higher...</a>
+    <button><a asp-action="Higherthan150" class="btn btn-light" style="color:black">150 Higher</a></button>
+    <button action="Higherthan150" href="/Cars/Higherthan150" class="btn btn-dark" style="color: red">> $150</button>
+    <button type="submit" style="color: green">150 PLUS</button>
+    <a class="btn btn-default" href="#" role="button">Link</a>
+    <button class="btn btn-default" type="submit">Button</button>
+    <input asp-action="Higherthan150" asp-controller="Cars" class="btn btn-default" type="button" value="Input">
+    <input class="btn btn-default" type="submit" value="Submit">
+    <button class="btn btn-link" asp-action="Nissan" asp-controller="Cars">hola</button>
 </p>
 
-<table class="table">
-    <thead>
+<table class="table table-striped">
+    <thead style="color:blue">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Make)
@@ -26,23 +36,24 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Make)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.City)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.CarId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.CarId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.CarId">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Make)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.City)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.CarId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.CarId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.CarId">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

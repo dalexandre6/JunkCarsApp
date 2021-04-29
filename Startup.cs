@@ -1,4 +1,5 @@
 using JunkCarsApp.Data;
+using JunkCarsApp.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -20,10 +21,11 @@ namespace JunkCarsApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            
+            //Here the CarsContext got added AS A SERVICE:
             services.AddDbContext<CarsContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("CarsContext")));
-
+            //This is the service that was added (DM3):
+            services.AddTransient<JsonFileProductService>();
             services.AddControllersWithViews();
 
         }
@@ -43,6 +45,8 @@ namespace JunkCarsApp
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            
 
             app.UseRouting();
 

@@ -7,10 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using JunkCarsApp.Data;
 using JunkCarsApp.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace JunkCarsApp.Controllers
 {
-    public class CarsController : Controller
+    public class CarsController : Controller//Injecting the CarsContext in the controller:(DIMI)-->>In this case it was scaffolded(made by .net)
     {
         private readonly CarsContext _context;
 
@@ -18,12 +19,15 @@ namespace JunkCarsApp.Controllers
         {
             _context = context;
         }
+       
 
         // GET: Cars
         public async Task<IActionResult> Index()
         {
             return View(await _context.Car.ToListAsync());
         }
+        
+
 
         // GET: Cars/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -43,7 +47,45 @@ namespace JunkCarsApp.Controllers
             return View(car);
         }
 
-        // GET: Cars/Create
+
+        //GET: Cars/TopTen --->WITH LINQ TO FILTER BY OPTIONS:
+        //[HttpGet] 
+        //public IEnumerable<Car> Higherthan150() // This will use linq to show you only prices > 150:
+        public IActionResult Higherthan150()
+        {
+
+            var top = (from t in _context.Car.Where(t => t.Price > 150)
+                       select t).ToList();
+            ViewData["higherthan150"] = top;
+            return View();
+
+        }
+        //GET: Cars/Nissan   -->this method will show me only Nissan cars:
+        //LINQ -- > ASP.NET CORE --> OR and &&
+
+        [HttpGet]
+        public IEnumerable<Car> Nissan()
+        {
+            var nissan = from n in _context.Car.Where(n => n.Make == "Nissan")
+                         select n;
+
+            return nissan.ToList();
+
+
+        }
+
+        //This is not an API, it's a controller:
+        //This API calls price higher than 100 in the city of Milwaukee:
+        [HttpGet]
+        public IEnumerable<Car> Linq()
+        {
+            var linq = from l in _context.Car.Where(l => l.Price > 100
+                       || l.City == "Chicago")
+                       select l;
+
+            return linq.ToList();
+        }
+
         public IActionResult Create()
         {
             return View();

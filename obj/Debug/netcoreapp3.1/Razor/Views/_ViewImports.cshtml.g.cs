@@ -12,16 +12,20 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
 #line 1 "C:\Users\dalex\source\repos\JunkCarsApp\Views\_ViewImports.cshtml"
 using JunkCarsApp;
 
 #line default
 #line hidden
+#nullable disable
+#nullable restore
 #line 2 "C:\Users\dalex\source\repos\JunkCarsApp\Views\_ViewImports.cshtml"
 using JunkCarsApp.Models;
 
 #line default
 #line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ab68b16ad9fe6c7638b93e95dcd5c973ec3bc9bc", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewImports : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {

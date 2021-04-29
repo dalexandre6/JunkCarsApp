@@ -1,0 +1,74 @@
+﻿@model IEnumerable<JunkCarsApp.Models.Car>
+@{
+    ViewData["Title"] = "Higherthan150"; //method name
+    //var highers = ViewData["car"] as List<Car>;
+    var top = ViewData["higherthan150"] as List<Car>;
+  //  return RedirectToActionResult("Higherthna150");
+}
+
+<h1>Cars with Higher Price than 150:</h1>
+
+
+<p>
+    <a asp-action="higherthan150" class="btn btn-light" style="color:blue">HOLA</a>
+</p>
+
+<table class="table">
+    <tr>
+
+    <th>Price</th>
+    <th>City</th>
+
+    </tr>
+
+    @foreach (var t in top)
+    {
+        <tr>
+            <td>@t.Price</td>
+            <td>@t.City</td>
+        </tr>
+
+    }
+
+</table>
+
+
+
+
+
+
+
+
+
+@*<table class="table table-striped">
+    <thead style="color:blue">
+        <tr>
+            <th>               
+            Make
+            </th>
+            <th>
+                City
+            </th>
+            <th>
+                Price
+            </th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var t in top)
+        {
+            <tr>
+                <td>
+                    @t.Make
+                </td>
+                <td>
+                    @t.City
+                </td>
+                <td>
+                    @t.Price
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>*@

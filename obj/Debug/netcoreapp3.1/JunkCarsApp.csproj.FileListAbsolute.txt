@@ -1,6 +1,5 @@
 C:\Users\dalex\source\repos\JunkCarsApp\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\dalex\source\repos\JunkCarsApp\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\dalex\source\repos\JunkCarsApp\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\dalex\source\repos\JunkCarsApp\bin\Debug\netcoreapp3.1\JunkCarsApp.exe
 C:\Users\dalex\source\repos\JunkCarsApp\bin\Debug\netcoreapp3.1\JunkCarsApp.deps.json
 C:\Users\dalex\source\repos\JunkCarsApp\bin\Debug\netcoreapp3.1\JunkCarsApp.runtimeconfig.json
@@ -125,9 +124,17 @@ C:\Users\dalex\source\repos\JunkCarsApp\bin\Debug\netcoreapp3.1\ru\Microsoft.Cod
 C:\Users\dalex\source\repos\JunkCarsApp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\dalex\source\repos\JunkCarsApp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\dalex\source\repos\JunkCarsApp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\dalex\source\repos\JunkCarsApp\obj\Debug\netcoreapp3.1\JunkCarsApp.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\dalex\source\repos\JunkCarsApp\obj\Debug\netcoreapp3.1\Razor\Views\Cars\Create.cshtml.g.cs
 C:\Users\dalex\source\repos\JunkCarsApp\obj\Debug\netcoreapp3.1\Razor\Views\Cars\Delete.cshtml.g.cs
 C:\Users\dalex\source\repos\JunkCarsApp\obj\Debug\netcoreapp3.1\Razor\Views\Cars\Details.cshtml.g.cs
 C:\Users\dalex\source\repos\JunkCarsApp\obj\Debug\netcoreapp3.1\Razor\Views\Cars\Edit.cshtml.g.cs
 C:\Users\dalex\source\repos\JunkCarsApp\obj\Debug\netcoreapp3.1\Razor\Views\Cars\Index.cshtml.g.cs
+C:\Users\dalex\source\repos\JunkCarsApp\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\dalex\source\repos\JunkCarsApp\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+C:\Users\dalex\source\repos\JunkCarsApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\dalex\source\repos\JunkCarsApp\obj\Debug\netcoreapp3.1\JunkCarsApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\dalex\source\repos\JunkCarsApp\obj\Debug\netcoreapp3.1\Razor\Views\Cars\Higherthan150.cshtml.g.cs
+C:\Users\dalex\source\repos\JunkCarsApp\obj\Debug\netcoreapp3.1\Razor\Views\Cars\MyServices.cshtml.g.cs
+C:\Users\dalex\source\repos\JunkCarsApp\obj\Debug\netcoreapp3.1\JunkCarsApp.csproj.CoreCompileInputs.cache
+C:\Users\dalex\source\repos\JunkCarsApp\obj\Debug\netcoreapp3.1\scopedcss\bundle\JunkCarsApp.styles.css
+C:\Users\dalex\source\repos\JunkCarsApp\obj\Debug\netcoreapp3.1\JunkCarsApp.genruntimeconfig.cache

@@ -13,6 +13,7 @@ namespace JunkCarsApp.Data
         {
         }
 
-        public DbSet<Car> Car { get; set; } //Car is the object in the Model Class
+        //One DbSet should be related to one table. (in this case I only have one table):
+        public DbSet<Car> Car { get; set; } //Car is the object in the Model Class. this should be named Cars
     }
 }

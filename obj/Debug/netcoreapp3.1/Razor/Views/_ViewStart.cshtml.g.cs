@@ -12,16 +12,20 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
 #line 1 "C:\Users\dalex\source\repos\JunkCarsApp\Views\_ViewImports.cshtml"
 using JunkCarsApp;
 
 #line default
 #line hidden
+#nullable disable
+#nullable restore
 #line 2 "C:\Users\dalex\source\repos\JunkCarsApp\Views\_ViewImports.cshtml"
 using JunkCarsApp.Models;
 
 #line default
 #line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Views/_ViewStart.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ab68b16ad9fe6c7638b93e95dcd5c973ec3bc9bc", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
@@ -29,12 +33,14 @@ using JunkCarsApp.Models;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
+#nullable restore
 #line 1 "C:\Users\dalex\source\repos\JunkCarsApp\Views\_ViewStart.cshtml"
   
     Layout = "_Layout";
 
 #line default
 #line hidden
+#nullable disable
         }
         #pragma warning restore 1998
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]

@@ -1,0 +1,16 @@
+﻿@page
+@model IEnumerable<JunkCarsApp.Models.Car>
+
+
+@{
+    ViewData["Title"] = "Top10Cars";
+}
+
+<h1>This is my Service Implementation DIMI, still a trial!!!:</h1>
+
+
+@foreach (var car in Model)
+{
+    <h2>@car.City</h2>
+
+}

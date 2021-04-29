@@ -12,16 +12,20 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
 #line 1 "C:\Users\dalex\source\repos\JunkCarsApp\Views\_ViewImports.cshtml"
 using JunkCarsApp;
 
 #line default
 #line hidden
+#nullable disable
+#nullable restore
 #line 2 "C:\Users\dalex\source\repos\JunkCarsApp\Views\_ViewImports.cshtml"
 using JunkCarsApp.Models;
 
 #line default
 #line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"bf8228762954a538608ed071141e2ab93fbc1ca2", @"/Views/Cars/Delete.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ab68b16ad9fe6c7638b93e95dcd5c973ec3bc9bc", @"/Views/_ViewImports.cshtml")]
     public class Views_Cars_Delete : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<JunkCarsApp.Models.Car>
@@ -57,63 +61,79 @@ using JunkCarsApp.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("\r\n");
+#nullable restore
 #line 3 "C:\Users\dalex\source\repos\JunkCarsApp\Views\Cars\Delete.cshtml"
   
     ViewData["Title"] = "Delete";
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n<h1>Delete</h1>\r\n\r\n<h3>Are you sure you want to delete this?</h3>\r\n<div>\r\n    <h4>Car</h4>\r\n    <hr />\r\n    <dl class=\"row\">\r\n        <dt class = \"col-sm-2\">\r\n            ");
+#nullable restore
 #line 15 "C:\Users\dalex\source\repos\JunkCarsApp\Views\Cars\Delete.cshtml"
        Write(Html.DisplayNameFor(model => model.Make));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dt>\r\n        <dd class = \"col-sm-10\">\r\n            ");
+#nullable restore
 #line 18 "C:\Users\dalex\source\repos\JunkCarsApp\Views\Cars\Delete.cshtml"
        Write(Html.DisplayFor(model => model.Make));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dd>\r\n        <dt class = \"col-sm-2\">\r\n            ");
+#nullable restore
 #line 21 "C:\Users\dalex\source\repos\JunkCarsApp\Views\Cars\Delete.cshtml"
        Write(Html.DisplayNameFor(model => model.City));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dt>\r\n        <dd class = \"col-sm-10\">\r\n            ");
+#nullable restore
 #line 24 "C:\Users\dalex\source\repos\JunkCarsApp\Views\Cars\Delete.cshtml"
        Write(Html.DisplayFor(model => model.City));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dd>\r\n        <dt class = \"col-sm-2\">\r\n            ");
+#nullable restore
 #line 27 "C:\Users\dalex\source\repos\JunkCarsApp\Views\Cars\Delete.cshtml"
        Write(Html.DisplayNameFor(model => model.Price));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dt>\r\n        <dd class = \"col-sm-10\">\r\n            ");
+#nullable restore
 #line 30 "C:\Users\dalex\source\repos\JunkCarsApp\Views\Cars\Delete.cshtml"
        Write(Html.DisplayFor(model => model.Price));
 
 #line default
 #line hidden
+#nullable disable
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n    \r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bf8228762954a538608ed071141e2ab93fbc1ca26210", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bf8228762954a538608ed071141e2ab93fbc1ca26552", async() => {
                 WriteLiteral("\r\n        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "bf8228762954a538608ed071141e2ab93fbc1ca26476", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "bf8228762954a538608ed071141e2ab93fbc1ca26818", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
                 __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.InputTypeName = (string)__tagHelperAttribute_0.Value;
                 __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_0);
+#nullable restore
 #line 35 "C:\Users\dalex\source\repos\JunkCarsApp\Views\Cars\Delete.cshtml"
 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvider.CreateModelExpression(ViewData, __model => __model.CarId);
 
 #line default
 #line hidden
+#nullable disable
                 __tagHelperExecutionContext.AddTagHelperAttribute("asp-for", __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
                 await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
                 if (!__tagHelperExecutionContext.Output.IsContentModified)
@@ -123,7 +143,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n        <input type=\"submit\" value=\"Delete\" class=\"btn btn-danger\" /> |\r\n        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bf8228762954a538608ed071141e2ab93fbc1ca28212", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bf8228762954a538608ed071141e2ab93fbc1ca28592", async() => {
                     WriteLiteral("Back to List");
                 }
                 );
