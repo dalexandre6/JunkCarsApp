@@ -15,6 +15,7 @@ namespace JunkCarsApp.Models
         [StringLength(20,MinimumLength =2)]
         public string Make { get; set; }
         [Required]
+        [StringLength(20,MinimumLength = 2)]
         public string City { get; set; }
         [Required]
         [DataType(DataType.Currency)]
