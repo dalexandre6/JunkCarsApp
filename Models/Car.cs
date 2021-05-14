@@ -11,7 +11,7 @@ namespace JunkCarsApp.Models
         [Key]
         public int CarId { get; set; }
         [Required]
-        [MaxLength(20)]
+        [MaxLength(15)]
         [StringLength(20,MinimumLength =2)]
         public string Make { get; set; }
         [Required]
@@ -19,8 +19,8 @@ namespace JunkCarsApp.Models
         public string City { get; set; }
         [Required]
         [DataType(DataType.Currency)]
-        [Range(0,1000)]
-        [Display(Name ="Price in US Dollars:")]
+        [Range(0,1200)]
+        [Display(Name ="Price in US Dollars: ")]
         public int Price { get; set; }
     }
 }
